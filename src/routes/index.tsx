@@ -115,6 +115,9 @@ function Index() {
                 <div className="text-center">
                   <div className="text-sm text-muted-foreground">L{a.level}</div>
                   <div className="text-lg font-semibold">{a.name}</div>
+                  <div className="mt-1 font-mono text-sm text-muted-foreground">
+                    avg {result.averageA.toFixed(2)}
+                  </div>
                 </div>
                 <div className="flex items-center gap-2">
                   <ScoreBadge value={result.setsA} highlight={result.winner === "A"} />
@@ -124,6 +127,9 @@ function Index() {
                 <div className="text-center">
                   <div className="text-sm text-muted-foreground">L{b.level}</div>
                   <div className="text-lg font-semibold">{b.name}</div>
+                  <div className="mt-1 font-mono text-sm text-muted-foreground">
+                    avg {result.averageB.toFixed(2)}
+                  </div>
                 </div>
               </div>
 
